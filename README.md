@@ -1,5 +1,5 @@
-#Tic Tac Toe
-A simple HTML/Javascript version of Tic Tac Toe.
+##Tic Tac Toe
+*A simple HTML/Javascript version of Tic Tac Toe.*
 
 By Travis Johnston
 
