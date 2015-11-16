@@ -2,88 +2,78 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./js/scripts.js"></script>
     <title>Tic-Tac-Toe</title>
   </head>
-  <body>
-    <div class="container">
-      <h1 id="title">Tic Tac Totes</h1>
-    </div>
-    <div class="title-screen">
-      <p>
-        <button class='btn btn-info' id="single-player">Solo Play</button>
-      </p>
-      <p>
-        <button class='btn btn-warning' id="two-player">Arena</button>
-      </p>
-    </div>
-    <div class="select-difficulty">
-      <p>
-        <button class='btn btn-success difficulty' id="easy">Novice</button>
-      </p>
-      <p>
-        <button class='btn btn-danger difficulty' id="hard">Master</button>
-      </p>
-    </div>
-    <div id="new-players">
-      <form role="form" id="player-form">
-        <div class="form-group playerOne">
-          <label for="playerOne-name">Player One</label>
-          <input type="text" id="playerOne-name" name="playerOne-name" placeholder="Enter a name..." required>
-          <select id="playerOne-mark">
-            <option value="x">X</option>
-          </select>
-        </div>
-
-        <div class="form-group playerTwo">
-          <label for="playerTwo-name">Player Two</label>
-          <input type="text" id="playerTwo-name" name="playerTwo-name" placeholder="Enter a name...">
-          <select id="playerTwo-mark">
-            <option value="o">O</option>
-          </select>
-        </div>
-        <button type="submit">Start</button>
-      </form>
-    </div>
-    <div class="game-space">
-
-      <h2 id="turn-counter">Current Player: <span class="current-player"></span></h2>
-
-      <div id="game-board">
-        <div id="playerOne-info">
-          <h3>Player One</h3>
-          <h5 id="playerOne-displayMark"></h5>
-        </div>
-
-        <div id="playerTwo-info">
-          <h3>Player Two</h3>
-          <h5 id="playerTwo-displayMark"></h5>
-        </div>
-
-        <table>
-          <tr>
-            <td class="blank-space" id="2" class="02"></td>
-            <td class="blank-space" id="5" class="12"></td>
-            <td class="blank-space" id="8" class="22"></td>
-          </tr>
-          <tr>
-            <td class="blank-space" id="1" class="01"></td>
-            <td class="blank-space" id="4" class="11"></td>
-            <td class="blank-space" id="7" class="21"></td>
-          </tr>
-          <tr>
-            <td class="blank-space" id="0" class="00"></td>
-            <td class="blank-space" id="3" class="10"></td>
-            <td class="blank-space" id="6" class="20"></td>
-          </tr>
-        </table>
+  <body class="container">
+    <div id="main-screen">
+      <h1 id="title">Tic Tac Toe</h1>
+      <div class="title-screen">
+          <button class='btn btn-info' id="single-player">Solo Play</button>
+          <button class='btn btn-warning' id="two-player">Arena</button>
       </div>
-    </div>
-    <div class="game-over">
-      <h1 class="game-over-message"></h1>
-      <button class="btn btn-default" onclick="playAgain()">Play Again</button>
+      <div class="select-difficulty">
+          <button class='btn btn-success difficulty' id="easy">Novice</button>
+          <button class='btn btn-danger difficulty' id="hard">Master</button>
+      </div>
+      <div id="new-players">
+        <form role="form" id="player-form">
+          <div class="form-group playerOne player-container">
+            <label for="playerOne-name">Player One</label>
+            <input type="text" id="playerOne-name" name="playerOne-name" placeholder="Enter a name..." required>
+            <select id="playerOne-mark">
+              <option value="x">X</option>
+              <option value="o">O</option>
+            </select>
+          </div>
+          <div class="form-group playerTwo player-container">
+            <label for="playerTwo-name">Player Two</label>
+            <input type="text" id="playerTwo-name" name="playerTwo-name" placeholder="Enter a name...">
+            <select id="playerTwo-mark">
+              <option value="o">O</option>
+              <option value="x">X</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-default">Start</button>
+        </form>
+      </div>
+      <div class="game-space">
+        <div id="game-board">
+          <div id="playerOne-info">
+            <h3>Player One</h3>
+            <h5 id="playerOne-displayMark"></h5>
+          </div>
+          <div id="playerTwo-info">
+            <h3>Player Two</h3>
+            <h5 id="playerTwo-displayMark"></h5>
+          </div>
+          <table>
+            <tr>
+              <td class="blank-space" id="2" class="02"></td>
+              <td class="blank-space" id="5" class="12"></td>
+              <td class="blank-space" id="8" class="22"></td>
+            </tr>
+            <tr>
+              <td class="blank-space" id="1" class="01"></td>
+              <td class="blank-space" id="4" class="11"></td>
+              <td class="blank-space" id="7" class="21"></td>
+            </tr>
+            <tr>
+              <td class="blank-space" id="0" class="00"></td>
+              <td class="blank-space" id="3" class="10"></td>
+              <td class="blank-space" id="6" class="20"></td>
+            </tr>
+          </table>
+        </div>
+        <h2 id="turn-counter">Current Player: <span class="current-player"></span></h2>
+      </div>
+      <div class="game-over">
+        <h1 class="game-over-message"></h1>
+        <button class="btn btn-default" onclick="playAgain()">Play Again</button>
+      </div>
     </div>
   </body>
 </html>

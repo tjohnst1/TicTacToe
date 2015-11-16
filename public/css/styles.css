@@ -1,15 +1,49 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title{
+  font-weight: 800;
+}
+
 .container {
   text-align: center;
 }
 
-h1#title {
-  font-size: 3.2em;
-  margin: 10% 0 0 0;
+#main-screen{
+  margin: 10vh 0 0 0
+}
+
+.player-container{
+  display: inline-block;
+  text-align: center;
+  width: 20vw;
+}
+
+.player-container label{
+  display: block;
+  font-weight: 500;
+  color: #696969
+}
+
+.player-container input{
+  display: block;
+  margin: 0 auto;
+}
+
+.player-container select{
+  display: block;
+  margin: 10px auto 0;
+}
+
+#player-form button{
+  display: block;
+  margin: 0 auto;
 }
 
 .title-screen,
 .select-difficulty {
-  margin: 10% auto;
+  margin: 0;
   text-align: center;
 }
 
@@ -18,15 +52,6 @@ h1#title {
 .select-difficulty {
   text-align: center;
   display: none;
-}
-
-
-div#new-players {
-  margin: 10% auto;
-}
-
-div.form-group {
-  display: inline-block;
 }
 
 .game-over {
@@ -40,20 +65,37 @@ td {
   width: 100px;
   height: 100px;
   text-align: center;
+  font-weight: 800;
+  font-size: 60px;
 }
 
 #playerOne-info, #playerTwo-info{
   display: inline-block;
-  padding: 0 30px 0 0;
+  margin: 10px;
   text-align: center;
+  color: #888888
+}
+
+#playerOne-info h3, #playerTwo-info h3{
+  font-size: 20px;
+  margin: 0;
+}
+
+#playerOne-info h5, #playerTwo-info h5{
+  margin: 0;
 }
 
 table{
   margin: 0 auto;
 }
 
-
 .game-over{
   text-align: center;
-  margin: 60px 0 0 0;
+  margin: 0;
+}
+
+.game-over-message{
+  color: #8B008B;
+  margin: 0 0 20px;
+  font-size: 60px;
 }
