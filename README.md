@@ -1,27 +1,24 @@
-##Tic Tac Toe
+#Tic Tac Toe
 *A simple HTML/Javascript version of Tic Tac Toe.*
+https://fathomless-forest-5686.herokuapp.com/
 
-By Travis Johnston
+**By Travis Johnston**
 
-###Description
-
+####Description
 This is a HTML/Javascript version of the game Tic Tac Toe featuring one and two player modes. There are two levels of AI as well. Chai/Mocha were used for testing.
 
-###Setup
-
+####Setup
 - git clone this file
 - cd into the root of the app
 - launch public/index.html in your browser of choice
 
 Alternatively, use the provided Heroku link noted above.
 
-###Technologies Used
-
+####Technologies Used
 JavaScript, jQuery, HTML, CSS, Chai, Mocha
 
 ###Legal
-
-Copyright (c) 2015 Travis Johnston
+*Copyright (c) 2015 Travis Johnston*
 
 This software is licensed under the MIT license.
 
